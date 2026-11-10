@@ -1,0 +1,27 @@
+name: UsbCam
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  UsbCam:
+    type: application
+    platform: iOS
+    sources: [UsbCam]
+    info:
+      path: UsbCam/Info.plist
+      properties:
+        CFBundleDisplayName: USB Cam
+        NSCameraUsageDescription: Used to show the live video from your USB or built-in camera.
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.usbcam
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
